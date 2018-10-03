@@ -47,8 +47,8 @@ const myLife = "It's my life";
 
 console.log(myLife);
 
-const alsoMyLife = 'it's my life';
-console.log(alsoMyLife);
+//const alsoMyLife = 'it's my life';
+//console.log(alsoMyLife);
 const alsoMyLife = 'it\'s my life';
 console.log(alsoMyLife);
 //string interpoletion
@@ -58,3 +58,34 @@ console.log(templateStr);
 
 const concatenatedStr = 'I am '+ 'concatenated';
 console.log(concatenatedStr);
+
+const strNumber = '48';
+console.log(strNumber);
+const number = 48;
+console.log(number);
+console.log(typeof strNumber);
+console.log(typeof number);
+
+//in js all float interger double float area same
+
+const integer = 8;
+const float = 3.14;
+
+console.log(integer);
+console.log(float);
+console.log(typeof integer);
+console.log(typeof float);
+
+const addNumbers = 5+5;
+const divideNumbers = 5/5;
+const mulitplyNumbers = 5*5;
+const remainder = 12%5;//modulus give remainder
+console.log(addNumbers);
+console.log(divideNumbers);
+console.log(mulitplyNumbers);
+console.log(remainder);
+
+const myBoolTrue = true;
+const myBoolFalse = false;
+console.log(myBoolTrue);
+console.log(myBoolFalse);
