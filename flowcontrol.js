@@ -1,10 +1,10 @@
-let x = false;
-if (x) {
+let x = 2;
+if (x == true) {
   console.log('the condition is true');
 } else if (x==false) {
   console.log('the condition is not true')
 }else {
-  console.log('this won\'t run');
+  console.log('\r this won\'t run ');
 }
 //comparison operators
 const comparisoneOne = 10 > 9;
