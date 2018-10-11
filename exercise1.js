@@ -13,7 +13,7 @@ shoppingList[shoppingList.indexOf('coffee')] = 'fair trade coffee';
 console.log(shoppingList);
 console.log('\n');
 
-shoppingList.splice(2,2, 'rice', 'beans');//splice(index, items to replace)
+shoppingList.splice(2,2, 'rice', 'beans');//splice(index, items to replace, what is replacing )
 console.log(shoppingList);
 console.log('\n');
 
