@@ -2,14 +2,14 @@
 var billAmount = 100;
 //var n = billAmount.toFixed(2);
 
-function gratuity(amount1){
-  return amount1 * 0.2;
+function gratuity(billAmount){// can name the argument differently in each function but will hold here value of 100 then will mult with * 0.2
+  return billAmount * 0.2;
   }
-function totalWithGrat(amount2){
-  var gratuityAmount = gratuity(amount2) + amount2;
+function totalWithGrat(billAmount){
+  var gratuityAmount = gratuity(billAmount) + billAmount;//20+100
   return gratuityAmount;
     }
-totalWithGrat(billAmount);
+console.log(totalWithGrat(billAmount));
 console.log(" your total including gratuity is: " + totalWithGrat(billAmount).toFixed(2));
 
 /*

@@ -22,5 +22,6 @@ function add(){
   }
   return sum;
 }
-const addTotal = add(1,2,3,4,5,6,7,8);
-console.log('addTotal is ' + addTotal);
+//const addTotal = add(1,2,3,4,5,6,7,8);
+//console.log('addTotal is ' + addTotal);
+console.log(add(1,2,3,4,5));

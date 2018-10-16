@@ -1,6 +1,7 @@
 
 const handsArray = ['rock','paper','scissors'];
-
+var player1count = 0;
+var player2count = 0;
 function getHand(){
 
   return handsArray[parseInt((Math.random()*10)%3)];
@@ -34,12 +35,26 @@ function playRound(player1, player2){
 
      ) {
         console.log("winner is " + player1.name);
+        player1count++;
+        //console.log(player1count);
       }
         else {
         console.log("winner is " + player2.name);
+        player2count++;
+          //console.log(player2count);
       }
+//else {
+  //console.log("No Winner");
+//}
 
+}
+function playGame( player1, player2, playUntil){
+  while (!!(player1count < playUntil) &&  !!(player2count < playUntil)){
+    playRound(player1, player2);
+    console.log(player1count);
+    console.log(player2count);
+  }
 }
 
 
-playRound(player1, player2);
+playGame( player1, player2, 5);
