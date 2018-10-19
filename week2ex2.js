@@ -16,7 +16,7 @@ const player2 = {
   name: 'kim',
   getHand: getHand
 }
-function playRound(player1, player2){
+function playRound(){
 
     var p1 = player1.getHand();
     var p2 = player2.getHand();
