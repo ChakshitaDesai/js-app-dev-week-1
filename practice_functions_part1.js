@@ -257,13 +257,146 @@
 // inception(); // "Hans Zimmer Rules!"
 
 
-/// Inside Function, this keyword refers to the object  (executor of the function) that is executing the function.
-var teacher = {
-	name: 'Assaf',
-	sayName: function() {
-		console.log(this.name);
-	}
-}
-teacher.sayName();// here teacher is the object that is and is exevutin the function sayName aso this.nname is teacher.name
+// /// Inside Function, this keyword refers to the object  (executor of the function) that is executing the function.
+// var teacher = {
+// 	name: 'Assaf',
+// 	sayName: function() {
+// 		console.log(this.name);
+// 	}
+// }
+// teacher.sayName();// here teacher is the object that is and is exevutin the function sayName aso this.nname is teacher.name
 
 // different objects can execute same function n produce diffeerent result as this is differenct for diff objects
+
+
+// function outer(){
+//
+// var a = 'hi';
+// var b = {
+// 	greet: 'bye'
+// }
+// console.log(a);
+// console.log(b);
+//  function inner(){ // parameter if for function and argument is for function execution
+//  console.log(a);
+//  console.log(b);
+// a = 'hello';
+// b = {
+// greet:'avjo'
+// }
+// console.log(a);
+// console.log(b);
+// b.greet1 = b.greet;
+// console.log(b.greet1+ " property innner fucntion");
+// }
+//
+// 	 inner(a,b); //argument is passed not parameter
+// console.log(a);
+// console.log(b);
+//
+// }
+// outer();
+
+//Scope, closure, and hoisting, oh my!
+
+// function createFunction() {
+// 	var a = "Hans Zimmer Rules!";
+//   inception = function() {
+// 		console.log(a);
+// 	}
+// }
+//
+// var inception;
+// createFunction();
+// inception(); // "Hans Zimmer Rules!"
+
+
+//  var slideshow = {
+// 	photoList: ['Aa','Bb','Cc'],
+//   currentPhotoIndex: 0,
+// 	nextPhoto: function(){
+// 		if ( this.currentPhotoIndex < this.photoList.length){
+// 			this.currentPhotoIndex++;
+// 			console.log(" next photo index is : " + this.currentPhotoIndex+ " and photo name is : "
+// 			 +this.photoList[this.currentPhotoIndex]);
+// 		}else {
+// 			console.log("end.");
+// 		}
+// 	},
+// 	prevPhoto: function(){
+// 		 if (this.currentPhotoIndex < this.photoList.length){
+// 			this.currentPhotoIndex--;
+// 			console.log("  previous Photo index is: "+this.currentPhotoIndex+ " and prevPhoto name is "
+// 			+this.photoList[this.currentPhotoIndex]);
+// 		}
+// 	},
+// 	getCurrentPhoto: function(){
+// 		//return photoList[currentPhotoIndex];
+// 		console.log("current photo is : " +this.photoList[this.currentPhotoIndex]);
+// 	}
+// }
+// slideshow.getCurrentPhoto();
+// slideshow.nextPhoto();
+// slideshow.prevPhoto();
+// slideshow.getCurrentPhoto();
+// slideshow.prevPhoto();
+// slideshow.getCurrentPhoto();
+// slideshow.prevPhoto();
+// slideshow.getCurrentPhoto();
+// slideshow.nextPhoto();
+// slideshow.prevPhoto();
+// slideshow.getCurrentPhoto();
+// slideshow.nextPhoto();
+// slideshow.nextPhoto();
+// slideshow.nextPhoto();
+// slideshow.nextPhoto();
+// slideshow.nextPhoto();
+// slideshow.prevPhoto();
+// slideshow.getCurrentPhoto();
+
+
+
+// function into another functions
+
+// function add(n1,n2){
+// 	return n1+n2;
+// 	}
+// function mult(n1,n2,n3){
+// 	return n1*n2*n3;
+// }
+// // doMath a higher order function takes anotherr function as an argumetn and returns a function
+// function doMath(operation, n1,n3,n5){
+// 	return operation(n1,n3,n5);
+// }// where as add and mult are call back funciton as they are passed as an argument to do math()
+// var math = doMath(add, 2, 3);//o5peration = add, n3 = 2, n4=3
+// console.log(math);
+// var math = doMath(mult,2,3,5);// operation = mult,n3 n4 = 3, n5=5
+// console.log(math);
+
+// filter gives array and single item is given by find gives just he object and when finds tru stops
+
+var students = [
+	{name: 'John Lennon', average: 10},
+	{name: 'Ringo Starr', average: 88},
+	{name: 'Paul McCartney', average: 82} ]
+
+let passingStudents = students.filter(function(passedStudents){
+	 if(passedStudents.average>=59){
+	 return students;}
+});//immediately invoke fucntion
+let passingStudents2 = students.find(function(passedStudents){
+	 if(passedStudents.average> 30){
+	 return students;}
+});
+let passingStudents3 = students.map(function(passedStudents){
+	if( passedStudents.average> 30){
+	return passedStudents.name}
+});
+// console.log(passingStudents);
+// console.log(passingStudents2);
+console.log(passingStudents3);//[ { name: 'Ringo Starr', average: 88 },
+//   { name: 'Paul McCartney', average: 82 } ]
+// { name: 'Ringo Starr', average: 88 }
+// [ false, true, true ]
+
+// map iterates and unlik find gives an array but unlik filter gives all results in an array
