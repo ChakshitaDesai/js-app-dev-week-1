@@ -1,4 +1,4 @@
-function addNumbers(a, b){
+/*function addNumbers(a, b){
   return a + b;
 }
 
@@ -25,3 +25,13 @@ cal.add = fucntion(a,b,c){
   return a + b + c;
 }
 console.log(cal.add(3,9,1));
+*/
+//cant do is
+/*cal = {
+  muliply: function(a,b){
+    return a*b;
+  }
+}
+
+const hello = 'hello, world!';
+hello = 'hello, kevin';*/

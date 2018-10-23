@@ -56,7 +56,7 @@ var player1 = {
   name: 'Kim',
   getHand: getHand,
   playRound: playRound,
-//  playGame: playGame
+playGame: playGame
 }
 var player2 = {
   name: 'Tim',
@@ -68,13 +68,13 @@ var player3 = {
   name: 'Sim',
   getHand: getHand,
   playRound: playRound,
-  //playGame: playGame
+  playGame: playGame
 }
 var player4 = {
   name: 'Dim',
   getHand: getHand,
     playRound: playRound,
-    //playGame: playGame
+    playGame: playGame
 }
 // var teamAwinner = {
 //

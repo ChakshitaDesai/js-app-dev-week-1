@@ -19,7 +19,7 @@ function outer(){
     console.log(a);
     console.log(b);
     console.log("after changed inner function");
-    b.name = " updating a property of the b object :)";
+    b.name = " updating a property of the b object ";
     console.log(b);
   }
   //console.log("outer");
